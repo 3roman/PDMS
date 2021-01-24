@@ -1,4 +1,4 @@
-﻿namespace PdmsAddin
+﻿namespace PDMSAddin
 {
     partial class PdmsControl
     {
@@ -53,7 +53,6 @@
             this.txtOwner2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pageSort = new System.Windows.Forms.TabPage();
-            this.btnRegularSort3 = new System.Windows.Forms.Button();
             this.btnMoveDown3 = new System.Windows.Forms.Button();
             this.btnMoveUp3 = new System.Windows.Forms.Button();
             this.lstElements3 = new System.Windows.Forms.ListBox();
@@ -87,6 +86,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(266, 414);
             this.tabControl1.TabIndex = 1;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // pageMTO
             // 
@@ -321,7 +321,6 @@
             // 
             // pageSort
             // 
-            this.pageSort.Controls.Add(this.btnRegularSort3);
             this.pageSort.Controls.Add(this.btnMoveDown3);
             this.pageSort.Controls.Add(this.btnMoveUp3);
             this.pageSort.Controls.Add(this.lstElements3);
@@ -334,16 +333,6 @@
             this.pageSort.TabIndex = 2;
             this.pageSort.Text = "元素排序";
             this.pageSort.UseVisualStyleBackColor = true;
-            // 
-            // btnRegularSort3
-            // 
-            this.btnRegularSort3.Location = new System.Drawing.Point(175, 358);
-            this.btnRegularSort3.Name = "btnRegularSort3";
-            this.btnRegularSort3.Size = new System.Drawing.Size(74, 23);
-            this.btnRegularSort3.TabIndex = 19;
-            this.btnRegularSort3.Text = "规则排序";
-            this.btnRegularSort3.UseVisualStyleBackColor = true;
-            this.btnRegularSort3.Click += new System.EventHandler(this.BtnRegularSort3_Click);
             // 
             // btnMoveDown3
             // 
@@ -456,6 +445,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnMoveUp3;
         private System.Windows.Forms.Button btnMoveDown3;
-        private System.Windows.Forms.Button btnRegularSort3;
     }
 }

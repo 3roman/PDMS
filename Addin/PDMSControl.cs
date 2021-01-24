@@ -5,7 +5,7 @@ using Aveva.Pdms.Database;
 using Aveva.Pdms.Utilities.CommandLine;
 using System.Linq;
 
-namespace PdmsAddin
+namespace PDMSAddin
 {
     public partial class PdmsControl : UserControl
     {
@@ -360,10 +360,9 @@ namespace PdmsAddin
             lstElements3.SelectedIndex = index + 1;
         }
 
-        private void BtnRegularSort3_Click(object sender, EventArgs e)
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var elemets = lstElements3.Items.Cast<string>().ToList();
-            new FrmAutoSortElement(elemets).ShowDialog();
+
         }
     }
 }

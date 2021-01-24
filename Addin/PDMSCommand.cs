@@ -1,7 +1,7 @@
 ﻿using Aveva.ApplicationFramework.Presentation;
 using System;
 
-namespace PdmsAddin
+namespace PDMSAddin
 {
     internal class PdmsCommand:Command
     {
@@ -25,8 +25,6 @@ namespace PdmsAddin
         {
             _window.Visible = false;
             Checked = _window.Visible;
-
-            // 
         }
 
         private void _window_Closed(object sender, EventArgs e)
@@ -46,5 +44,4 @@ namespace PdmsAddin
             }
         }
     }
-
 }

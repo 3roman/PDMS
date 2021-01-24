@@ -65,12 +65,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAutoSortElement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAutoSortElement.Designer.cs">
-      <DependentUpon>frmAutoSortElement.cs</DependentUpon>
-    </Compile>
     <Compile Include="PDMSAddin.cs" />
     <Compile Include="PDMSCommand.cs" />
     <Compile Include="PDMSControl.cs">
@@ -82,9 +76,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmAutoSortElement.resx">
-      <DependentUpon>frmAutoSortElement.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PDMSControl.resx">
       <DependentUpon>PDMSControl.cs</DependentUpon>
     </EmbeddedResource>
